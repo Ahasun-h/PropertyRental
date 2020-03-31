@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00B4E5</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="bottomNavigationViewColor">#6023F9</color>
+    <color name="colorGreen">#5CA793</color>
+    <color name="colorBlue">#1296BA</color>
+    <color name="colorBody">#EDAA39</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorMain">#00B4E5</color>
+    <color name="colorBlack">#181818</color>
+    <color name="colorGray">#7C7C7C</color>
+
+    <color name="colorIcon">#B1B1B1</color>
+
+
+</resources>

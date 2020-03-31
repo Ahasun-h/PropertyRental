@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.NumberAuthentication">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="74dp"
+            android:layout_height="74dp"
+            android:padding="15dp"
+            android:background="@drawable/ic_logo_background"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_logo2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verification"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#6C6C6C"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We will send you a One Time Password on"
+            android:layout_marginTop="25dp"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textColor="#BCBCBC"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="your phone number"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textColor="#BCBCBC"
+            android:layout_gravity="center" />
+
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="+8801 xxx xxxxx"
+            android:textSize="20sp"
+            android:drawablePadding="10dp"
+            android:paddingLeft="20dp"
+            android:drawableLeft="@drawable/ic_call"
+            android:background="@drawable/borderstroke"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="30dp"
+            android:maxLength="11"/>
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get OTP"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:background="@drawable/colormain"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="72dp"
+            android:paddingRight="72dp"/>
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:id="@+id/login_form_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Working . . ."
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

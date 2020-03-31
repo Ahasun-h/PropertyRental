@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ProfileUpdate"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:background="@drawable/image_boder"
+                android:padding="5dp"
+                android:src="@drawable/ic_user" />
+
+            <ImageView
+                android:id="@+id/btn_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/profile_image"
+                android:layout_alignTop="@+id/profile_image"
+                android:background="@drawable/camera_button_bg"
+                android:padding="6dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/photo_camera_black" />
+
+        </RelativeLayout>
+
+
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="20dp"
+            android:drawablePadding="8dp"
+            android:background="@drawable/borderstroke"
+            android:drawableLeft="@drawable/ic_user"
+            android:hint="UserName"
+            android:inputType="text"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Email"
+            android:paddingLeft="20dp"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/borderstroke"
+            android:drawableLeft="@drawable/ic_email"
+            android:inputType="textEmailAddress"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Address"
+            android:paddingLeft="20dp"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/borderstroke"
+            android:drawableLeft="@drawable/home"
+            android:inputType="textEmailAddress"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="28dp">
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:src="@drawable/black"
+                android:background="@drawable/colormain"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/bottonUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:background="@drawable/colormain"
+                android:text="Update"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="28dp"/>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

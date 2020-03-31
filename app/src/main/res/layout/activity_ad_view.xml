@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AdViewActivity"
+    android:orientation="vertical">
+
+
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/featured_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/image_load_bg"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingRight="18dp"
+                        android:paddingLeft="18dp"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:id="@+id/post_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Title"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            android:gravity="left"
+                            android:layout_marginBottom="18dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            android:background="@drawable/ad_view_content_bg">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Address :"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:gravity="left" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Post Code"
+                                    android:textSize="18sp"
+                                    android:gravity="left"
+                                    android:layout_weight="0.5"/>
+
+                                <TextView
+                                    android:id="@+id/id"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="id"
+                                    android:textSize="18sp"
+                                    android:gravity="left"
+                                    android:layout_weight="0.5"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Division"
+                                    android:textSize="18sp"
+                                    android:gravity="left"
+                                    android:layout_weight="0.5"/>
+
+                                <TextView
+                                    android:id="@+id/division"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="division"
+                                    android:textSize="18sp"
+                                    android:gravity="left"
+                                    android:layout_weight="0.5"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="City"
+                                    android:textSize="18sp"
+                                    android:gravity="left"
+                                    android:layout_weight="0.5"/>
+
+                                <TextView
+                                    android:id="@+id/city"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="city"
+                                    android:textSize="18sp"
+                                    android:gravity="left"
+                                    android:layout_weight="0.5"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Address"
+                                    android:textSize="18sp"
+                                    android:gravity="left"
+                                    android:layout_weight="0.5"/>
+
+                                <TextView
+                                    android:id="@+id/address"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="id"
+                                    android:textSize="18sp"
+                                    android:gravity="left"
+                                    android:layout_weight="0.5"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/ad_view_content_bg"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Ad Information :"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:gravity="left" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Ad Category"
+                                    android:textSize="18sp"
+                                    android:gravity="left"
+                                    android:layout_weight="0.5"/>
+
+                                <TextView
+                                    android:id="@+id/category"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="category"
+                                    android:textSize="18sp"
+                                    android:gravity="left"
+                                    android:layout_weight="0.5"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Last Date of Rent"
+                                    android:textSize="18sp"
+                                    android:gravity="left"
+                                    android:layout_weight="0.5"/>
+
+                                <TextView
+                                    android:id="@+id/rent_date"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="rtrent date"
+                                    android:textSize="18sp"
+                                    android:gravity="left"
+                                    android:layout_weight="0.5"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Price"
+                                    android:textSize="18sp"
+                                    android:gravity="left"
+                                    android:layout_weight="0.5"/>
+
+                                <TextView
+                                    android:id="@+id/renters"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="renters"
+                                    android:textSize="18sp"
+                                    android:gravity="left"
+                                    android:layout_weight="0.5"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Utility Amount"
+                                    android:textSize="18sp"
+                                    android:gravity="left"
+                                    android:layout_weight="0.5"/>
+
+                                <TextView
+                                    android:id="@+id/utility"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="utility"
+                                    android:textSize="18sp"
+                                    android:gravity="left"
+                                    android:layout_weight="0.5"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Space"
+                                    android:textSize="18sp"
+                                    android:gravity="left"
+                                    android:layout_weight="0.5"/>
+
+                                <TextView
+                                    android:id="@+id/space_size"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="space_size"
+                                    android:textSize="18sp"
+                                    android:gravity="left"
+                                    android:layout_weight="0.5"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Tenant Type"
+                                    android:textSize="18sp"
+                                    android:gravity="left"
+                                    android:layout_weight="0.5"/>
+
+                                <TextView
+                                    android:id="@+id/tenant"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Tenant"
+                                    android:textSize="18sp"
+                                    android:gravity="left"
+                                    android:layout_weight="0.5"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Floor"
+                                    android:textSize="18sp"
+                                    android:gravity="left"
+                                    android:layout_weight="0.5"/>
+
+                                <TextView
+                                    android:id="@+id/floor"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="floor"
+                                    android:textSize="18sp"
+                                    android:gravity="left"
+                                    android:layout_weight="0.5"/>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/ad_view_content_bg"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Description :"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:gravity="left" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#ADADAD"
+                                android:layout_marginRight="160dp" />
+
+                            <TextView
+                                android:id="@+id/description"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="description"
+                                android:textSize="18sp"
+                                android:gravity="left"
+                                android:layout_marginTop="8dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/extra_information"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="visible"
+                            android:padding="20dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:background="#E9E9E9"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Apartment No"
+                                    android:textSize="18sp"
+                                    android:gravity="left"
+                                    android:layout_weight="0.5"
+                                    android:drawableLeft="@drawable/apartment"
+                                    android:drawablePadding="8dp"/>
+
+                                <TextView
+                                    android:id="@+id/apartment_no"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="apartment_no"
+                                    android:textSize="18sp"
+                                    android:gravity="left"
+                                    android:layout_weight="0.5"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:background="#FFFFFF"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Bedroom"
+                                    android:textSize="18sp"
+                                    android:gravity="left"
+                                    android:layout_weight="0.5"
+                                    android:drawableLeft="@drawable/bedroom"
+                                    android:drawablePadding="8dp"/>
+
+                                <TextView
+                                    android:id="@+id/bedroom"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:gravity="left"
+                                    android:text="bedroom"
+                                    android:textSize="18sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:background="#E9E9E9"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Bathroom"
+                                    android:textSize="18sp"
+                                    android:gravity="left"
+                                    android:layout_weight="0.5"
+                                    android:drawableLeft="@drawable/bathroom"
+                                    android:drawablePadding="8dp"/>
+
+                                <TextView
+                                    android:id="@+id/bathroom"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:text="bathroom"
+                                    android:textSize="18sp"
+                                    android:gravity="left" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:background="#FFFFFF"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Balconies"
+                                    android:textSize="18sp"
+                                    android:gravity="left"
+                                    android:layout_weight="0.5"
+                                    android:drawableLeft="@drawable/balconies"
+                                    android:drawablePadding="8dp"/>
+
+
+                                <TextView
+                                    android:id="@+id/balconi"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:text="balconi"
+                                    android:textSize="18sp"
+                                    android:gravity="left" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:background="#E9E9E9"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Kitchen"
+                                    android:textSize="18sp"
+                                    android:gravity="left"
+                                    android:layout_weight="0.5"
+                                    android:drawableLeft="@drawable/kitchen"
+                                    android:drawablePadding="8dp"/>
+
+                                <TextView
+                                    android:id="@+id/kitchen"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:text="kitchen"
+                                    android:textSize="18sp"
+                                    android:gravity="left" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:background="#FFFFFF"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Diningr Room"
+                                    android:textSize="18sp"
+                                    android:gravity="left"
+                                    android:layout_weight="0.5"
+                                    android:drawableLeft="@drawable/dinner"
+                                    android:drawablePadding="8dp"/>
+
+                                <TextView
+                                    android:id="@+id/dining_room"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:text="Dining Room"
+                                    android:textSize="18sp"
+                                    android:gravity="left" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:background="#E9E9E9"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Drawing Room"
+                                    android:textSize="18sp"
+                                    android:gravity="left"
+                                    android:layout_weight="0.5"
+                                    android:drawableLeft="@drawable/drawing"
+                                    android:drawablePadding="8dp"/>
+
+                                <TextView
+                                    android:id="@+id/drawing_room"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:text="drawing_room"
+                                    android:textSize="18sp"
+                                    android:gravity="left" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:background="#FFFFFF"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Garage"
+                                    android:textSize="18sp"
+                                    android:gravity="left"
+                                    android:layout_weight="0.5"
+                                    android:drawableLeft="@drawable/garage"
+                                    android:drawablePadding="8dp"/>
+
+                                <TextView
+                                    android:id="@+id/garage"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:text="garage"
+                                    android:textSize="18sp"
+                                    android:gravity="left" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/ad_view_content_bg">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Time Schedule"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:gravity="left" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Closing Time"
+                                    android:textSize="18sp"
+                                    android:gravity="left"
+                                    android:layout_weight="0.5"/>
+
+                                <TextView
+                                    android:id="@+id/closing_time"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="closing_time"
+                                    android:textSize="18sp"
+                                    android:gravity="left"
+                                    android:layout_weight="0.5"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Opening Time"
+                                    android:textSize="18sp"
+                                    android:gravity="left"
+                                    android:layout_weight="0.5"/>
+
+                                <TextView
+                                    android:id="@+id/opening_time"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="opening_time"
+                                    android:textSize="18sp"
+                                    android:gravity="left"
+                                    android:layout_weight="0.5"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/ad_view_content_bg">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Nearest Famous Address :"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:gravity="left" />
+
+                            <TextView
+                                android:id="@+id/nearest_famous_place_one"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="nearest_famous_place_one"
+                                android:textSize="18sp"
+                                android:gravity="left" />
+
+                            <TextView
+                                android:id="@+id/nearest_famous_place_two"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="nearest_famous_place_two"
+                                android:textSize="18sp"
+                                android:gravity="left" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="10dp">
+
+                            <Button
+                                android:id="@+id/button_interest"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/colormain"
+                                android:textColor="#fff"
+                                android:textSize="15sp"
+                                android:text="Interest"
+                                android:visibility="visible"/>
+
+                            <ProgressBar
+                                android:id="@+id/progress_bar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:visibility="gone"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </ScrollView>
+
+
+
+
+</LinearLayout>

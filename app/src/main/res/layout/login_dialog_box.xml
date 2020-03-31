@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:paddingBottom="40dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login Failed!"
+        android:textSize="34sp"
+        android:gravity="left"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorMain"
+        android:padding="20dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/alart"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your email or password is incorrect. Please try again..."
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textStyle="normal"
+        android:layout_marginTop="10dp"
+        android:textColor="#474747"
+        android:padding="40dp"/>
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ok"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:background="@drawable/colormain"
+        android:paddingRight="72dp"
+        android:paddingLeft="72dp"/>
+
+
+
+</LinearLayout>
